@@ -1,0 +1,56 @@
+# ── Build artifacts ──────────────────────────────
+build/
+dist/
+*/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# ── Gradle ───────────────────────────────────────
+.gradle/
+local.properties
+gradle-app.setting
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# ── Node / npm ───────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+
+# ── Capacitor / Android native cache ─────────────
+android/.gradle/
+android/app/build/
+android/build/
+android/capacitor-cordova-android-plugins/build/
+
+# ── IDE ──────────────────────────────────────────
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*.code-workspace
+.codegraph/
+.joycode/
+
+# ── System files ─────────────────────────────────
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# ── Keys / signing ───────────────────────────────
+*.keystore
+*.jks
+key.properties
+
+# ── Misc temp / logs ─────────────────────────────
+.tmp/
+*.log
+*.tmp
+*.bak

@@ -1,0 +1,8 @@
+{
+  "appId": "com.inscarstudy.pdfexamsplitter",
+  "appName": "PDF试卷切分助手",
+  "webDir": "public",
+  "server": {
+    "androidScheme": "https"
+  }
+}
