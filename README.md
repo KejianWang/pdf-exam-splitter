@@ -49,7 +49,7 @@ pdf-exam-splitter/
 > PWA / Service Worker 需要 HTTP 环境；直接双击 `index.html` 可用核心功能，但无法验证离线缓存。
 
 ```powershell
-cd D:\WorkCode\ins-car-study\pdf-exam-splitter
+cd ..\pdf-exam-splitter
 npm run start
 ```
 
@@ -58,7 +58,7 @@ npm run start
 ## 运行测试
 
 ```powershell
-cd D:\WorkCode\ins-car-study\pdf-exam-splitter
+cd ..\pdf-exam-splitter
 npm test
 ```
 
@@ -75,19 +75,18 @@ npm test
 本工程已接入 Capacitor Android，APK 已生成到：
 
 ```text
-D:\WorkCode\ins-car-study\pdf-exam-splitter\dist\PDF试卷切分助手-v1.3.1-debug.apk
+..\pdf-exam-splitter\dist\PDF试卷切分助手-v1.3.1-debug.apk
 ```
 
 重新打包可执行：
 
 ```powershell
-cd D:\WorkCode\ins-car-study\pdf-exam-splitter
+cd ..\pdf-exam-splitter
 npm run apk
 ```
 
 说明：
 
-- 打包脚本会使用 `D:\android-build\jdk21\jdk-21.0.12.1+1`（本次构建已下载的便携 JDK 21）和 `D:\android-build\sdk`。
 - APK 内已打包全部 HTML/CSS/JS/PDF 依赖资源，手机安装后不需要 npm，也不需要联网。
 - 打包前会移除 Android `INTERNET` 权限；当前 APK 经 `aapt2 dump permissions` 验证未包含 `android.permission.INTERNET`。
 - 当前产物是 debug 签名 APK，适合自用/测试安装。若要正式分发，可后续配置 release keystore 再生成正式签名包。
